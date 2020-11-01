@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zadatak</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="brand">ZADATAK ZA FRONTEND</h1>
+    </div>
+    <div class="wraper animate__animated animate__bounceInLeft">
+      <div class="tableMod">
+        <div class="filterSort">
+          <div class="sortBy">
+            <p>Sort</p>
+            <select name="sortingParams" id="sortingParams">
+              <option value="">--Sort parametar--</option>
+              <option value="name">Name</option>
+              <option value="balance">Balance</option>
+              <option value="isActive">IsActive</option>
+              <option value="registered">Registered</option>
+              <option value="state">State</option>
+              <option value="country">Country</option>
+            </select>
+            <button id="sendParamsBtn" type="button">SORT</button>
+          </div>
+          <div class="filterBy">
+            <p>Filter</p>
+            <select name="filteringParams" id="filteringParams">
+              <option value="">--Filter parametar--</option>
+              <option value="name">Name</option>
+              <option value="balance">Balance</option>
+              <option value="isActive">IsActive</option>
+              <option value="registered">Registered</option>
+              <option value="state">State</option>
+              <option value="country">Country</option>
+            </select>
+            <input type="text" id="searchBy" placeholder="Search for.." />
+          </div>
+          <div id="paginationBtns">
+            <p>Pagination</p>
+            <button id="pagination20" type="button">20</button>
+            <button id="pagination50" type="button">50</button>
+            <button id="pagination100" type="button">100</button>
+          </div>
+        </div>
+      </div>
+      <div class="tableWraper"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

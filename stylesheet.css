@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background:#92bde7;
+    color:#485e74;
+    line-height:1.6;
+    font-family: sans-serif;
+    padding:1em;
+}
+
+.container{
+    max-width:1170px;
+    padding:1em;
+}
+
+.brand span{
+    color:white;    
+}
+
+.wraper{
+    box-shadow:0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wraper > *{
+    padding:1em;
+}
+
+.tableMod{
+    background:#c9e6ff;
+}
+
+/* Table STYLES */
+.tableWraper{
+    background: #f9feff;
+}
+
+table {
+    width: 100%;
+}
+
+td, th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tableWraper table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.tableWraper table tr:hover {
+    background-color: #ddd;
+}
+
+.tableWraper table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #C9E6FF;
+}
+
+/* PAGINATION */
+.inactive {
+    display: none;
+}
+
+.pager{
+    display: flex;    
+    align-items: center;
+}
+
+.pager-item {
+    cursor: pointer;    
+    width: 30px;
+    margin: 0 5px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected {
+    background: #C9E6FF;
+}
